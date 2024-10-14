@@ -3,6 +3,6 @@
 "bucket"         : "aws-els-terraform-state",
 "dynamodb_table" : "aws-els-terraform-state-lock",
 "profile"        : "",
-"role_arn"       : "",
+"role_arn"       : "arn:aws:iam::779846818107:role/admin_role",
 "encrypt"        : "true"
 }
