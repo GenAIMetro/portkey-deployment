@@ -1,0 +1,8 @@
+{
+"region"         : "us-west-2",
+"bucket"         : "aws-els-terraform-state",
+"dynamodb_table" : "aws-els-terraform-state-lock",
+"profile"        : "",
+"role_arn"       : "",
+"encrypt"        : "true"
+}
