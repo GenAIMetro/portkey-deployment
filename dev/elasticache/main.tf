@@ -1,5 +1,5 @@
 module "elasticache" {
-    source = "https://github.com/GenAIMetro/portkey-modules.git//modules/elasticache"
+    source = "https://github.com/GenAIMetro/portkey-modules//modules/elasticache"
     name = var.name
     environment = var.environment
     region = var.region

@@ -1,5 +1,5 @@
 module "rds" {
-  source = "https://github.com/GenAIMetro/portkey-modules.git//modules/rds"
+  source = "https://github.com/GenAIMetro/portkey-modules//modules/rds"
   name = var.name
   region = var.region
   availability_zones = var.availability_zones
