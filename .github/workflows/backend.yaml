@@ -1,0 +1,39 @@
+name: Run Backend config
+
+on:
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  # VPC Stage
+  run_backend_config:
+    runs-on: ubuntu-latest
+    steps:
+    # Checkout the repository
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # Configure AWS Credentials
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ secrets.AWS_REGION }}
+
+    # Setup Terraform
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v1
+
+
+    # Initialize and apply Terraform for VPC
+    - name: RUN Backend
+      working-directory: ./backend
+      id: apply
+      run: |
+        terraform init 
+        terraform apply -var-file=../env.json -auto-approve
+
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
