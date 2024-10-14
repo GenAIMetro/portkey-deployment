@@ -1,5 +1,5 @@
 module "transitgw" {
-    source = "../../modules/transit_gw"
+    source = https://github.com/GenAIMetro/portkey-modules.git//modules/transit_gw"
     name = var.name
     environment = var.environment
     region = var.region
