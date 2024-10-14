@@ -4,7 +4,6 @@ module "rds" {
   region = var.region
   availability_zones = var.availability_zones
   environment = var.environment
-  rds_instance_names = var.rds_instance_names
   rds_instance_size = var.rds_instance_size
   db_name = var.db_name
   db_user = var.db_user
