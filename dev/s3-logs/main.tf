@@ -1,5 +1,5 @@
 module "s3-logs" {
-  source = "https://github.com/GenAIMetro/portkey-modules//modules/s3-logs"
+  source = "git::https://github.com/GenAIMetro/portkey-modules.git//modules/s3-logs"
   name = var.name
   environment = var.environment
   region = var.region

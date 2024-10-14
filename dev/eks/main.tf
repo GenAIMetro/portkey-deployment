@@ -1,5 +1,5 @@
 module "eks" {
-    source = "https://github.com/GenAIMetro/portkey-modules//modules/eks"
+    source = "git::https://github.com/GenAIMetro/portkey-modules.git//modules/eks"
     name = var.name
     environment = var.environment
     region = var.region

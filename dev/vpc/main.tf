@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "https://github.com/GenAIMetro/portkey-modules//modules/vpc"
+  source = "git::https://github.com/GenAIMetro/portkey-modules.git//modules/vpc"
   name = var.name
   environment = var.environment
   region = var.region
