@@ -3,6 +3,7 @@ module "backend" {
   name = var.name
   environment = var.environment
   region = var.region
+  role_arn = var.role_arn
 }
 
 variable "name" {
@@ -12,5 +13,8 @@ variable "region" {
   type = string
 }
 variable "environment" {
+  type = string
+}
+variable "role_arn" {
   type = string
 }
