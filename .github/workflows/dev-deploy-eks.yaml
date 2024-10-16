@@ -1,11 +1,11 @@
-name: Deploy Dev EKS 
+name: 5. Deploy Dev EKS 
 
 on:
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
   # VPC Stage
-  deploy_vpc:
+  deploy_eks:
     runs-on: ubuntu-latest
     steps:
     # Checkout the repository

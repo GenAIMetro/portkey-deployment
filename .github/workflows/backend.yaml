@@ -1,4 +1,4 @@
-name: Run Backend config
+name: 0. Run Backend config
 
 on:
   workflow_dispatch:  # Allows manual triggering
@@ -37,3 +37,4 @@ jobs:
       uses: actions-js/push@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+    

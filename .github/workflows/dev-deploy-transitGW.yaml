@@ -1,11 +1,11 @@
-name: Deploy Dev Transit GW 
+name: 2. Deploy Dev Transit GW 
 
 on:
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
   # VPC Stage
-  deploy_vpc:
+  deploy_transit_gw:
     runs-on: ubuntu-latest
     steps:
     # Checkout the repository
