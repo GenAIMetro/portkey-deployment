@@ -5,7 +5,7 @@ on:
 
 jobs:
   # VPC Stage
-  deploy_transit_gw:
+  destroy_transit_gw:
     runs-on: ubuntu-latest
     steps:
     # Checkout the repository
