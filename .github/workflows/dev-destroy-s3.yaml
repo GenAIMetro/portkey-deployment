@@ -1,4 +1,4 @@
-name: 3. Deploy Destroy S3 LOGS 
+name: 3. Destroy Dev S3 LOGS 
 
 on:
   workflow_dispatch:  # Allows manual triggering

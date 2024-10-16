@@ -1,4 +1,4 @@
-name: 2. Deploy Destroy Transit GW 
+name: 2. Destroy Dev Transit GW 
 
 on:
   workflow_dispatch:  # Allows manual triggering
